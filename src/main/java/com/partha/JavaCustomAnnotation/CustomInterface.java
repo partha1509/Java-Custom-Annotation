@@ -8,6 +8,6 @@ import java.lang.annotation.Target;
 @Target({ElementType.FIELD, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CustomInterface {
-    public String value();
-    public String message();
+    public String value() default "anyvalue";
+    public String message() default "Something Wrong";
 }
